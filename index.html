@@ -15,8 +15,31 @@
     iframe{
         max-width: 100%;
     }
+
+    .img{
+        width: 640px;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px 0 30px;
+        display: inline-block;
+        
+    }
+
+    .img img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    @media (max-width:640px) {
+        .img{
+            margin-top: 26px;
+            padding: 0 16px 0 16px;
+        }
+    }
 </style>
 <body>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUjoyyrUJkXJl-u8KaHGvlbZqCnxiZlZict9cqTcCZl617oQ/viewform?embedded=true" width="640" height="8604" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+    <div class="img"><img src="./img.jpg" alt="" /></div>
+    <!-- <img src="./img.jpg" alt="" /> -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUjoyyrUJkXJl-u8KaHGvlbZqCnxiZlZict9cqTcCZl617oQ/viewform?embedded=true" width="640" height="11859" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
 </body>
 </html>
